@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-    background-color: aqua;
+    background-color: #ffffff;
     padding: 1rem;
     /* position: fixed; */
     z-index: 99;
@@ -30,12 +30,16 @@ header {
     box-shadow: 0 2px 2px #000000;
 }
 
+
 section {
     background-color: coral;
     /* Make section element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
 
+/* Footer */
 footer {
-    background-color: greenyellow;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
 }
