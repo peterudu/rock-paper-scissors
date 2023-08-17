@@ -14,12 +14,20 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: black;
+    color: #000000 ;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header */
 header {
     background-color: aqua;
+    padding: 1rem;
+    /* position: fixed; */
+    z-index: 99;
+    text-align: center;
+    /* height: 5rem; */
+    width: 100%;
+    box-shadow: 0 2px 2px #000000;
 }
 
 section {
