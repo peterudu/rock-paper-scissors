@@ -1,3 +1,4 @@
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -7,12 +8,24 @@
     box-sizing: border-box;
 }
 
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     background-color: aqua;
 }
 
 section {
     background-color: coral;
+    /* Make section element take up any surplus space to push footer down */
+    flex: 1 0 auto;
 }
 
 footer {
