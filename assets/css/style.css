@@ -30,9 +30,9 @@ header {
     box-shadow: 0 2px 2px #000000;
 }
 
-
+/* Section main game area */
 section {
-    background-color: coral;
+    background-color: #ffffff;
     /* Make section element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
