@@ -30,11 +30,16 @@ header {
     box-shadow: 0 2px 2px #000000;
 }
 
-/* Section main game area */
-section {
+/* section / main game area */
+.game-area {
     background-color: #ffffff;
     /* Make section element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
 }
 
 /* Footer */
