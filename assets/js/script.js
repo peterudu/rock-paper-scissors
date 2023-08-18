@@ -17,6 +17,24 @@ buttons.forEach(button => {
     });
 });
 
-console.log(buttons[0].innerHTML);
-console.log(buttons[1].innerHTML);
-console.log(buttons[2].innerHTML);
+console.log(playerScore.innerHTML);
+console.log(computerScore.innerHTML);
+
+
+
+function playGame(playerChoice) {
+
+}
+
+function checkWinner(playerChoice, computerChoice) {
+
+}
+
+function updateScores(result) {
+
+}
+
+function resetScore() {
+    
+}
+
