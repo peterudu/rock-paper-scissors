@@ -21,20 +21,36 @@ console.log(playerScore.innerHTML);
 console.log(computerScore.innerHTML);
 
 
-
+/**
+ * The main game function. Accepts one parameter, which
+ * is the  data choice value of the selected button
+ */
 function playGame(playerChoice) {
+    playerImage.src = `assets/images/${choices[playerChoice]}.png`
+    playerImage.alt = choices[playerChoice];
 
-}
+    let computerChoice = Math.floor(Math.random() * 3);
+    console.log(computerChoice, playerChoice)
 
-function checkWinner(playerChoice, computerChoice) {
+    computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
 
-}
-
-function updateScores(result) {
-
-}
-
-function resetScore() {
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    console.log(result);
+    messages.innerText = result;
     
+    // updateScores(result);
 }
+
+// function checkWinner(playerChoice, computerChoice) {
+
+// }
+
+// function updateScores(result) {
+
+// }
+
+// function resetScore() {
+    
+// }
 
