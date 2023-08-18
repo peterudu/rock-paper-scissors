@@ -30,6 +30,13 @@ header {
     box-shadow: 0 2px 2px #000000;
 }
 
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
 /* section / main game area */
 .game-area {
     background-color: #ffffff;
@@ -42,9 +49,10 @@ header {
     text-align: center;
 }
 
-/* Footer */
-footer {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
+/* control buttons */
+.control {
+    display: inline-block;
+    margin: 2px;
+    width: 5rem;
+    height: 2.5rem;
 }
