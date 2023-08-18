@@ -56,3 +56,27 @@ footer {
     width: 5rem;
     height: 2.5rem;
 }
+
+#messages {
+    height: 1.25rem;
+}
+
+.player {
+    background-color: lightblue;
+    float: left;
+    width: 45%;
+}
+
+#player-image {
+    width: 75%;
+}
+
+.computer {
+    background-color: lightcoral;
+    float: right;
+    width: 45%;
+}
+
+#computer-image {
+    width: 75%;
+}
