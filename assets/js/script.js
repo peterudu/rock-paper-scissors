@@ -42,9 +42,35 @@ function playGame(playerChoice) {
     // updateScores(result);
 }
 
-// function checkWinner(playerChoice, computerChoice) {
 
-// }
+/**
+ * Checks to see who the winner is, it accepts two strings as
+ * parameters
+ */
+function checkWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return "A draw";
+    }   else if (playerChoice === "rock") {
+        if (computerChoice === "paper") {
+            return "Computer won";
+        }  else {
+            return "Player won";
+        }
+    }   else if (playerChoice === "paper") {
+        if (computerChoice === "scissors") {
+            return "Computer won";
+        }  else {
+            return "Player won";
+        }
+    }   else if (playerChoice === "scissors") {
+        if  (computerChoice === "rock") {
+            return "Computer won";
+        }   else {
+            return "Player won";
+      }
+    }
+}
+
 
 // function updateScores(result) {
 
