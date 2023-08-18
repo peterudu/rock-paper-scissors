@@ -36,10 +36,11 @@ function playGame(playerChoice) {
     computerImage.alt = choices[computerChoice];
 
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    console.log(result);
-    messages.innerText = result;
     
-    // updateScores(result);
+    messages.innerHTML = result;
+    console.log(result);
+
+    updateScores(result);
 }
 
 
@@ -72,9 +73,16 @@ function checkWinner(playerChoice, computerChoice) {
 }
 
 
-// function updateScores(result) {
-
-// }
+/**
+ * Increment the total playerScore or computerScore depending the winner
+ */
+function updateScores(result) {
+    if (messages.innerHTML === "Player won") {
+        playerScore = playerScore.innerText + 1;
+        } else if (messages.innerHTML === "Computer won") {
+        computerScore = computerScore + 1;
+    }
+}
 
 // function resetScore() {
     
