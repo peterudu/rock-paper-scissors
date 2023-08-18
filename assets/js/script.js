@@ -7,10 +7,16 @@ const computerImage = document.querySelector("#computer-image");
 const messages = document.querySelector("#messages");
 const choices = ["rock", "paper", "scissors"];
 
-console.log(buttons)
-console.log(playerScore.innerHTML)
-console.log(computerScore.innerHTML)
-console.log(playerImage)
-console.log(computerImage)
-console.log(messages)
-console.log(choices)
+/**
+ * Add event listener to all buttons
+ */
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        playGame(playerChoice);
+    });
+});
+
+console.log(buttons[0].innerHTML);
+console.log(buttons[1].innerHTML);
+console.log(buttons[2].innerHTML);
