@@ -98,7 +98,7 @@ function checkWinner(playerChoice, computerChoice) {
 
 
 /**
- * Checks and if no winner between player and computer total scores will not increase and display a draw message
+ * If no winner function assigns a draw message. No increment to player or computer total scores
  */
 function draw(playerChoice, computerChoice) {
   playerScoreSpan.innerHTML = playerScore;
@@ -106,5 +106,13 @@ function draw(playerChoice, computerChoice) {
   messages.innerHTML = "A draw";
 }
 
+/**
+ * Increment in player total scores and assigns win message
+ */
+function won(playerChoice, computerChoice) {
+  playerScore++;
+  playerScoreSpan.innerHTML = playerScore;
+  computerScoreSpan.innerHTML = computerScore;
+  messages.innerHTML = "Player won";
+}
 
-  
