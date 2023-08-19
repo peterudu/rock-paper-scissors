@@ -1,7 +1,9 @@
 //  Declare constants for DOM elements and possible game choices
+let playerScore = 0;
+let computerScore = 0;
+const playerScoreSpan = document.querySelector("#player-score");
+const computerScoreSpan = document.querySelector("#computer-score");
 const buttons = document.querySelectorAll(".control");
-const playerScore = document.querySelector("#player-score");
-const computerScore = document.querySelector("#computer-score");
 const playerImage = document.querySelector("#player-image");
 const computerImage = document.querySelector("#computer-image");
 const messages = document.querySelector("#messages");
@@ -17,9 +19,6 @@ buttons.forEach(button => {
     });
 });
 
-console.log(playerScore.innerHTML);
-console.log(computerScore.innerHTML);
-
 
 /**
  * The main game function. Accepts one parameter, which
@@ -30,17 +29,17 @@ function playGame(playerChoice) {
     playerImage.alt = choices[playerChoice];
 
     let computerChoice = Math.floor(Math.random() * 3);
-    console.log(computerChoice, playerChoice)
+    console.log(playerChoice, computerChoice)
 
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
     
-    messages.innerHTML = result;
-    console.log(result);
+    // messages.innerHTML = result;
+    // console.log(result);
 
-    updateScores(result);
+    // updateScores(result);
 }
 
 
@@ -78,9 +77,9 @@ function checkWinner(playerChoice, computerChoice) {
  */
 function updateScores(result) {
     if (messages.innerHTML === "Player won") {
-        playerScore = playerScore.innerText + 1;
+        playerScore = playerScore.innerHTML + 1;
         } else if (messages.innerHTML === "Computer won") {
-        computerScore = computerScore + 1;
+        computerScore = computerScore.innerHTML + 1;
     }
 }
 
