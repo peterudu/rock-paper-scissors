@@ -55,7 +55,7 @@ function playGame(playerChoice) {
 
 
 /**
- * Checks to see who the winner is, it accepts two strings as
+ * Checks to see who the game winner is, it accepts two strings as
  * parameters
  */
 function checkWinner(playerChoice, computerChoice) {
@@ -95,6 +95,16 @@ function checkWinner(playerChoice, computerChoice) {
       }
     }
   }
+
+
+/**
+ * Checks and if no winner between player and computer total scores will not increase and display a draw message
+ */
+function draw(playerChoice, computerChoice) {
+  playerScoreSpan.innerHTML = playerScore;
+  computerScoreSpan.innerHTML = computerScore;
+  messages.innerHTML = "A draw";
+}
 
 
   
