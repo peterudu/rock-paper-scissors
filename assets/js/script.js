@@ -107,12 +107,22 @@ function draw(playerChoice, computerChoice) {
 }
 
 /**
- * Increment in player total scores and assigns win message
+ * Increment in player total scores and assigns win message to player or computer
  */
 function won(playerChoice, computerChoice) {
   playerScore++;
   playerScoreSpan.innerHTML = playerScore;
   computerScoreSpan.innerHTML = computerScore;
   messages.innerHTML = "Player won";
+}
+
+/**
+ *By a loss assigns a won message to the opponent. No increment to opponent total scores
+ */
+function lost(playerChoice, computerChoice) {
+  computerScore++;
+  computerScoreSpan.innerHTML = computerScore;
+  playerScoreSpan.innerHTML = playerScore;
+  messages.innerHTML = "Computer won";
 }
 
