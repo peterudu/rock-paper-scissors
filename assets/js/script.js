@@ -1,9 +1,9 @@
 //  Declare constants for DOM elements and possible game choices
-let playerScore = 0;
-let computerScore = 0;
+let playerScore;
+let computerScore;
+const buttons = document.querySelectorAll(".control");
 const playerScoreSpan = document.querySelector("#player-score");
 const computerScoreSpan = document.querySelector("#computer-score");
-const buttons = document.querySelectorAll(".control");
 const playerImage = document.querySelector("#player-image");
 const computerImage = document.querySelector("#computer-image");
 const messages = document.querySelector("#messages");
@@ -12,12 +12,24 @@ const choices = ["rock", "paper", "scissors"];
 /**
  * Add event listener to all buttons
  */
-buttons.forEach(button => {
+// buttons.forEach(button => {
+//     button.addEventListener("click", function () {
+//         let playerChoice = this.getAttribute("data-choice");
+//         playGame(playerChoice);
+//         console.log(typeof playerChoice)
+//     });
+// });
+
+for (let button of buttons) {
     button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-    });
-});
+    let playerChoice = this.getAttribute("data-id");
+    console.log(playerChoice)
+    return playerChoice
+    })
+  }
+
+// console.log(playerScore.innerHTML);
+// console.log(computerScore.innerHTML);
 
 
 /**
@@ -34,7 +46,7 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    // let result = checkWinner(choices[computerChoice], choices[playerChoice]);
     
     // messages.innerHTML = result;
     // console.log(result);
@@ -48,22 +60,22 @@ function playGame(playerChoice) {
  * parameters
  */
 function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
+    if (playerChoice == computerChoice) {
         return "A draw";
-    }   else if (playerChoice === "rock") {
-        if (computerChoice === "paper") {
+    }   else if (playerChoice == "rock") {
+        if (computerChoice == "paper") {
             return "Computer won";
         }  else {
             return "Player won";
         }
-    }   else if (playerChoice === "paper") {
-        if (computerChoice === "scissors") {
+    }   else if (playerChoice == "paper") {
+        if (computerChoice == "scissors") {
             return "Computer won";
         }  else {
             return "Player won";
         }
-    }   else if (playerChoice === "scissors") {
-        if  (computerChoice === "rock") {
+    }   else if (playerChoice == "scissors") {
+        if  (computerChoice == "rock") {
             return "Computer won";
         }   else {
             return "Player won";
@@ -75,13 +87,13 @@ function checkWinner(playerChoice, computerChoice) {
 /**
  * Increment the total playerScore or computerScore depending the winner
  */
-function updateScores(result) {
-    if (messages.innerHTML === "Player won") {
-        playerScore = playerScore.innerHTML + 1;
-        } else if (messages.innerHTML === "Computer won") {
-        computerScore = computerScore.innerHTML + 1;
-    }
-}
+// function updateScores(result) {
+//     if (messages.innerHTML === "Player won") {
+//         playerScore = playerScore.innerHTML + 1;
+//         } else if (messages.innerHTML === "Computer won") {
+//         computerScore = computerScore.innerHTML + 1;
+//     }
+// }
 
 // function resetScore() {
     
