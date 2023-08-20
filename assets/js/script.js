@@ -1,35 +1,25 @@
-//  Declare constants for DOM elements and possible game choices
-let playerScore;
-let computerScore;
-const buttons = document.querySelectorAll(".control");
+/**
+ * Declare constants for DOM elements
+ * and possible choices
+ */
+let playerScore = 0;
+let computerScore = 0;
 const playerScoreSpan = document.querySelector("#player-score");
 const computerScoreSpan = document.querySelector("#computer-score");
+const buttons = document.querySelectorAll(".control");
 const playerImage = document.querySelector("#player-image");
 const computerImage = document.querySelector("#computer-image");
 const messages = document.querySelector("#messages");
 const choices = ["rock", "paper", "scissors"];
+const reset = document.querySelector("#reset");
 
-/**
- * Add event listener to all buttons
- */
- buttons.forEach(button => {
-     button.addEventListener("click", function () {
-        let playerChoice = this.getAttribute("data-choice");
-        playGame(playerChoice);
-        console.log(typeof playerChoice)
-     });
-});
-
-// for (let button of buttons) {
-//     button.addEventListener("click", function () {
-//     let playerChoice = this.getAttribute("data-choice");
-//     console.log(playerChoice)
-//     return playerChoice
-//     })
-//   }
-
-// console.log(playerScore.innerHTML);
-// console.log(computerScore.innerHTML);
+// Add even listener to all buttons
+for (let button of buttons) {
+  button.addEventListener("click", function () {
+    let playerChoice = this.getAttribute("data-choice");
+    playGame(playerChoice);
+  });
+}
 
 
 /**
@@ -37,68 +27,59 @@ const choices = ["rock", "paper", "scissors"];
  * is the  data choice value of the selected button
  */
 function playGame(playerChoice) {
-    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
-    playerImage.alt = choices[playerChoice];
-  
-    let computerChoice = Math.floor(Math.random() * 3);
-    console.log(computerChoice, playerChoice);
-  
-    computerImage.src = `assets/images/${choices[computerChoice]}.png`;
-    computerImage.alt = choices[computerChoice];
-  
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-    // console.log(result);
-    // messages.innerText = result;
-  
-    // updateScores(result);
-  }
+  playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+  playerImage.alt = choices[playerChoice];
+
+  let computerChoice = Math.floor(Math.random() * 3);
+  console.log(computerChoice, playerChoice);
+
+  computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+  computerImage.alt = choices[computerChoice];
+
+  let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+
+  // updateScores(result);
+}
 
 
 /**
- * Checks to see who the game winner is, it accepts two strings as
+ * Checks to see who the winner is, it accepts two strings as
  * parameters
  */
 function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
-      // return "A draw";
-      draw(playerChoice, computerChoice);
-      messages.innerHTML = "A draw"
-    } else if (playerChoice === "rock") {
-      if (computerChoice === "paper") {
-        // return "Computer won";
-        lost(playerChoice, computerChoice);
-        messages.innerHTML = "Computer won"
-      } else {
-        // return "Player won";
-        won(playerChoice, computerChoice);
-        messages.innerHTML = "Player won"
-      }
-    } else if (playerChoice === "paper") {
-      if (computerChoice === "scissors") {
-        // return "Computer won";
-        lost(playerChoice, computerChoice);
-        messages.innerHTML = "Computer won"
-      } else {
-        // return "Player won";
-        won(playerChoice, computerChoice);
-        messages.innerHTML = "Player won"
-      }
-    } else if (playerChoice === "scissors") {
-      if (computerChoice === "rock") {
-        // return "Computer won";
-        lost(playerChoice, computerChoice);
-        messages.innerHTML = "Computer won"
-      } else {
-        // return "Player won";
-        won(playerChoice, computerChoice);
-        messages.innerHTML = "Player won"
-      }
+  if (playerChoice === computerChoice) {
+    draw(playerChoice, computerChoice);
+    messages.innerHTML = "A draw"
+  } else if (playerChoice === "rock") {
+    if (computerChoice === "paper") {
+      lost(playerChoice, computerChoice);
+      messages.innerHTML = "Computer won"
+    } else {
+      won(playerChoice, computerChoice);
+      messages.innerHTML = "Player won"
+    }
+  } else if (playerChoice === "paper") {
+    if (computerChoice === "scissors") {
+      lost(playerChoice, computerChoice);
+      messages.innerHTML = "Computer won"
+    } else {
+      won(playerChoice, computerChoice);
+      messages.innerHTML = "Player won"
+    }
+  } else if (playerChoice === "scissors") {
+    if (computerChoice === "rock") {
+      lost(playerChoice, computerChoice);
+      messages.innerHTML = "Computer won"
+    } else {
+      won(playerChoice, computerChoice);
+      messages.innerHTML = "Player won"
     }
   }
+}
 
 
 /**
- * If no winner function assigns a draw message. No increment to player or computer total scores
+ * Assigns a draw message if no game winnner between player and computer
  */
 function draw(playerChoice, computerChoice) {
   playerScoreSpan.innerHTML = playerScore;
@@ -107,7 +88,7 @@ function draw(playerChoice, computerChoice) {
 }
 
 /**
- * Increment in player total scores and assigns win message to player or computer
+ * Assigns a message that player won the game and increments total player score value by 1
  */
 function won(playerChoice, computerChoice) {
   playerScore++;
@@ -117,8 +98,8 @@ function won(playerChoice, computerChoice) {
 }
 
 /**
- *By a loss assigns a won message to the opponent. No increment to opponent total scores
- */
+ * Assigns a message that computer won the game and increments the total computer score value by 1
+ */ 
 function lost(playerChoice, computerChoice) {
   computerScore++;
   computerScoreSpan.innerHTML = computerScore;
