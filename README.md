@@ -26,17 +26,37 @@ The general aim is to make the game look simple and in this context the text con
 The colour choice was aided using the [webfx color-picker](https://www.webfx.com/web-design/color-picker/ ) tool
 
 ### Typography
-Google Fonts was used to select the free font Roboto as the sole font for the whole of the website.
-### Imagery
-
+Google Fonts was used to select the free font Roboto which is the only font used for the whole of the website. The Roboto font is a sans-serif font.
 ### Wireframes
 
 
 ### Features
+The Rock Paper Scissors website has a single page with attractive features.
+- Header
+    - The header contains the heading title of the site. It has a large text font and so immediately catches the attention of the site visitor.
+    
+    ![Header](/assets/images/header.webp)
 
+- Footer
+    - The footer section lies at the bottom of the game page and it contains the rules of the game. T open to a new tab and so allowing the user to navigate easily.
+    - The footer rules content enables new visitors and beginners to quickly grasp how the game is played
+
+    ![Footer](/assets/images/footer.webp)
+
+- Game Area
+    The game area is main area of the game page. It contains the game option buttons, displays the results message as well as showing the player and computer choices.
+    - The buttons enable the player to choose from one of three game buttons options inorder to start the game.
+    - The game scores display information enables the user to keep a overview of the game process
+    - The message point displays the winner of a game.
+
+    ![Game Area](/assets/images/game-area.webp)
+    
 
 ### Accessibility
-
+I took the following measures to ensure that the website is accessible:
+- The code was written using semantic HTML.
+- On the buttons I added aria-label attributes to enable screen readers understand their purpose.
+- I used contrasting background and text colours on the website as well as differing colours for the player and computer action areas.
 ## Technologies Used
 ### Languages Used
 The languages used to create this site were HTML, CSS and JavaScript
