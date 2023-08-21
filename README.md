@@ -34,20 +34,24 @@ Google Fonts was used to select the free font Roboto as the sole font for the wh
 
 ### Features
 
-    
-
-  
-
-
-
 
 ### Accessibility
 
 ## Technologies Used
 ### Languages Used
-
+The languages used to create this site were HTML, CSS and JavaScript
 ### Frameworks, Libraries & Programs Used
+Git was used for version control.
 
+Github was used to save and store the files for the website.
+
+Gitpod workspace was used to write and edit code for the website.
+
+Balsamiq was used to create wireframes for the website.
+
+Google Fonts was used to import Roboto font used on the game app.
+
+Chrome DevTools was used to inspect the rendered HTML and test out features of the website.
 
 ## Deployment & Local Development
 ### Deployment
@@ -82,8 +86,6 @@ Google Fonts was used to select the free font Roboto as the sole font for the wh
 ### Media
 #### Images
 T
-#### Video Clip
-
 ### Acknowledgements
 
 
