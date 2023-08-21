@@ -53,12 +53,25 @@ Google Fonts was used to import Roboto font used on the game app.
 
 Chrome DevTools was used to inspect the rendered HTML and test out features of the website.
 
+[Am I Responsive](https://ui.dev/amiresponsive) was used to show how the website would look on different devices.
+
+[Birme](https://www.birme.net/?no_resize=true&image_format=webp) was used to change images to webp format.
+
+[Favicon.io](https://favicon.io/) was used to create favicon for the website
+
 ## Deployment & Local Development
 ### Deployment
-
+The site was deployed to GitHub pages. For the deployment the following steps are required:
+1. Login to GitHub repository and navigate to the Settings tab. 
+2. From the left sidebar options select Pages from the menu.
+3. Under section Github Pages go to subsection Build and deployment, then set Branch to main and click save. The website is deployed and a live link for the website will be generated.
 
 ### Local Development
-
+To clone this project proceed with the following steps:
+1. Login to GitHub and go to the repository of this project, https://peterudu.github.io/rock-paper-scissors/.
+2. Chose and click the green Code button.
+3. Select a cloning method from one of options, either HTTPS, SSH or GitHub CLI and copy the offered link.
+4. Open up the terminal of your code editor, select a directory for your project, type in the Git command  - ‘git clone’ and then paste in the copied link from the github repository.
 ## Testing
 ### Automated Testing
 #### W3C Validator
