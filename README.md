@@ -20,10 +20,13 @@ The graphics of the game are basic and this makes it appealing to all age groups
  
 ## Design
 ### Colour Scheme
+The general aim is to make the game look simple and in this context the text content are coloured black on a white background. Brighter colours are used to differentiate between the actions of the player and that of the opponent computer as such a light blue colour defines the player area and red colour is used for the computer actions. The contrasting colour mix of white and black as well as light blue are used to present the basic face of the website.
 
+![Range of colours](/assets/images/color-range.webp)
+The colour choice was aided using the [webfx color-picker](https://www.webfx.com/web-design/color-picker/ ) tool
 
 ### Typography
-
+Google Fonts was used to select the free font Roboto as the sole font for the whole of the website.
 ### Imagery
 
 ### Wireframes
