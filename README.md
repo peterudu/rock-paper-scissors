@@ -85,7 +85,13 @@ To clone this project proceed with the following steps:
 I used the Lighthouse feature from Chrome Developer Tools to test the levels of accessibility, performance and best practices for moblie and desktop devices. For both devices the accessibility results were over 97 percent.
 - [Desktop Results](/assets/images/lighthouse-desktop.webp)
 - [Mobile Result](/assets/images/lighthouse-mobile.webp)
-
+#### JSHint
+I used the [JSHint validator](https://jshint.com/) to test the JavaScript. No error was reported:
+Metrics reported were as follows:
+ - There are 6 functions in this file.
+ - Function with the largest signature take 2 arguments, while the median is 2.
+ - Largest function has 18 statements in it, while the median is 4.
+ - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 ### Manual Testing
 #### Testing User Stories
 

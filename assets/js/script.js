@@ -40,7 +40,6 @@ function playGame(playerChoice) {
  
 }
 
-
 /**
  * Checks to see who the winner is, it accepts two strings as
  * parameters
