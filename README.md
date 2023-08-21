@@ -75,7 +75,16 @@ To clone this project proceed with the following steps:
 ## Testing
 ### Automated Testing
 #### W3C Validator
+- [W3C HTML validator](https://validator.w3.org/) was used to validate the HTML on the following pages of the website.
+    - [index.html](/assets/images/html-validator.webp) - passed test no errors 
+<br>
 
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS stylesheet.
+    - [style.css](/assets/images/css-validator.webp) - passed test no error
+#### Lighthouse
+I used the Lighthouse feature from Chrome Developer Tools to test the levels of accessibility, performance and best practices for moblie and desktop devices. For both devices the accessibility results were over 97 percent.
+- [Desktop Results](/assets/images/lighthouse-desktop.webp)
+- [Mobile Result](/assets/images/lighthouse-mobile.webp)
 
 ### Manual Testing
 #### Testing User Stories
