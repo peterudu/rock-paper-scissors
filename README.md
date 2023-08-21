@@ -4,9 +4,10 @@ The Rock Paper Scissors website is a simple game application which visitors can 
 
 The graphics of the game are basic and this makes it appealing to all age groups and enables the user of the application to easily focus on enjoying the game.
 
-![Image of the website](/assets/images/)
+![Image of the website](/assets/images/amiresponsivep.webp)
 
-[The live link to the hosted project](https://peterudu.github.io/benin-bronzes/) 
+[The live link to the hosted project](https://peterudu.github.io/rock-paper-scissors/ 
+) 
 
 ## User Experience (UX)
 ### User Stories
@@ -47,10 +48,7 @@ The graphics of the game are basic and this makes it appealing to all age groups
 
 ## Deployment & Local Development
 ### Deployment
-The site was deployed to GitHub pages. For the deployment the following steps are required:
-1. Login to GitHub repository and navigate to the Settings tab. 
-2. From the left sidebar options select Pages from the menu.
-3. Under section Github Pages go to subsection Build and deployment, then set Branch to main and click save. The website is deployed and a live link for the website will be generated.
+
 
 ### Local Development
 
