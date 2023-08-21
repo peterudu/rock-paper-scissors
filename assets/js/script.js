@@ -11,7 +11,7 @@ const playerImage = document.querySelector("#player-image");
 const computerImage = document.querySelector("#computer-image");
 const messages = document.querySelector("#messages");
 const choices = ["rock", "paper", "scissors"];
-const reset = document.querySelector("#reset");
+
 
 // Add even listener to all buttons
 for (let button of buttons) {
@@ -31,14 +31,13 @@ function playGame(playerChoice) {
   playerImage.alt = choices[playerChoice];
 
   let computerChoice = Math.floor(Math.random() * 3);
-  console.log(computerChoice, playerChoice);
+  console.log(playerChoice, computerChoice);
 
   computerImage.src = `assets/images/${choices[computerChoice]}.png`;
   computerImage.alt = choices[computerChoice];
 
-  let result = checkWinner(choices[computerChoice], choices[playerChoice]);
-
-  // updateScores(result);
+  checkWinner(choices[computerChoice], choices[playerChoice]);
+ 
 }
 
 
@@ -49,30 +48,30 @@ function playGame(playerChoice) {
 function checkWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     draw(playerChoice, computerChoice);
-    messages.innerHTML = "A draw"
+    messages.innerHTML = "A draw";
   } else if (playerChoice === "rock") {
     if (computerChoice === "paper") {
       lost(playerChoice, computerChoice);
-      messages.innerHTML = "Computer won"
+      messages.innerHTML = "Computer won";
     } else {
       won(playerChoice, computerChoice);
-      messages.innerHTML = "Player won"
+      messages.innerHTML = "Player won";
     }
   } else if (playerChoice === "paper") {
     if (computerChoice === "scissors") {
       lost(playerChoice, computerChoice);
-      messages.innerHTML = "Computer won"
+      messages.innerHTML = "Computer won";
     } else {
       won(playerChoice, computerChoice);
-      messages.innerHTML = "Player won"
+      messages.innerHTML = "Player won";
     }
   } else if (playerChoice === "scissors") {
     if (computerChoice === "rock") {
       lost(playerChoice, computerChoice);
-      messages.innerHTML = "Computer won"
+      messages.innerHTML = "Computer won";
     } else {
       won(playerChoice, computerChoice);
-      messages.innerHTML = "Player won"
+      messages.innerHTML = "Player won";
     }
   }
 }
