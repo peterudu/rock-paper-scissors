@@ -113,28 +113,22 @@ Metrics reported were as follows:
  - Function with the largest signature take 2 arguments, while the median is 2.
  - Largest function has 18 statements in it, while the median is 4.
  - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
-### Manual Testing
-#### Testing User Stories
 
-
-#### Full Testing
-
-
-#### General Testing
-
-### Fixed Bugs
 
 ### Unfixed Bugs
-  
+ - I could not fix the bug for the game restart button
 
 ## Credits
 ### Code Used
-
+- Code used to build the structure of the game area of the page was based on [Code Institute](https://codeinstitute.net/de/) Full Stack Development Software course
+- Code used to build the game page was also inspired from Brad Traversy (Traversy Media) course in [YouTube](https://www.youtube.com/) 
 ### Content
+- The structure and layout used to create the README file was modelled on example by [Kera Cudmore](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md) 
 
 ### Media
 #### Images
-T
+TThe images used for the site, namely the rock, paper and scissors figures were free source images from:
+- [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Images)
 ### Acknowledgements
 I acknowledge the following people who helped me complete this project:
 - [Jubril Akolade](https://www.linkedin.com/in/jubrillionaire/?originalSubdomain=ca) my Code Institute mentor
