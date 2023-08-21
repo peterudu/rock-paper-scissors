@@ -28,8 +28,9 @@ The colour choice was aided using the [webfx color-picker](https://www.webfx.com
 ### Typography
 Google Fonts was used to select the free font Roboto which is the only font used for the whole of the website. The Roboto font is a sans-serif font.
 ### Wireframes
+Wireframes of the game page was created as blueprint for desktop and mobile devices.
 
-
+- [Wireframe of game page on desktop device](/assets/images/balsamiq-wireframe-desktop.webp)
 ### Features
 The Rock Paper Scissors website has a single page with attractive features.
 - Header
@@ -135,6 +136,8 @@ Metrics reported were as follows:
 #### Images
 T
 ### Acknowledgements
+I acknowledge the following people who helped me complete this project:
+- [Jubril Akolade](https://www.linkedin.com/in/jubrillionaire/?originalSubdomain=ca) my Code Institute mentor
 
 
  
