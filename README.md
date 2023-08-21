@@ -114,7 +114,13 @@ Metrics reported were as follows:
  - Largest function has 18 statements in it, while the median is 4.
  - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
-
+#### Full Testing
+Full testing was performed on:
+- Laptop:
+    - Lenovo V15-IGL
+- Mobile Device:
+    - LG Velvet 
+    
 ### Unfixed Bugs
  - I could not fix the bug for the game restart button
 
