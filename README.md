@@ -115,7 +115,24 @@ Metrics reported were as follows:
  - Function with the largest signature take 2 arguments, while the median is 2.
  - Largest function has 18 statements in it, while the median is 4.
  - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+### Manual Testing
+#### Testing User Stories
+Firsttime Visitors
+| Goals | How are they achieved? |
+| ---| ---|
+| I want to be able to access and run the game site with large and small devices. | I developed the game site so that it could be accessed and played with both a small mobile phone and a large desktop computer. |
+| I want a game app that is easy to learn and understand. | The site shows the user the rules on how to play the game at the bottom footer section. The rules are written and described in a clear and simple way, for instance rock beats scissors. Visually the chosen game option is also displayed |
 
+Returning Visitors
+| Goals | How are they achieved? |
+| ---| ---|
+| I want a game site which is satisfying to use. | The game site xxxx |
+| I want a game website that is challenging. | xxxxx |
+
+Frequent Visitors
+| Goals | How are they achieved? |
+| ---| ---|
+| I want a site that is constantly being improved and offers new features. | xxxx |
 #### Full Testing
 Full testing was performed on:
 - Laptop:
