@@ -99,8 +99,12 @@ footer {
 
 /* For small screen sizes from 600px wide and below */
 @media screen and (max-width: 600px) {
-   
-     
+    .player, .computer {
+        float: none;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
 
 /* For small screen sizes from 350px wide and below */
@@ -120,4 +124,5 @@ footer {
         width: 4rem;
         height: 2rem;
     }
+
 } 
