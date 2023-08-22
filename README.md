@@ -12,11 +12,13 @@ The graphics of the game are basic and this makes it appealing to all age groups
 ## User Experience (UX)
 ### User Stories
 #### First Time Visitors Goals
-
+- I want to be able to access and run the game site with large and small devices.
+- I want a game app that is easy to learn and understand.
 #### Returning Visitors Goals
-
+- I want a game site which is satisfying to use.
+- I want a game website that is challenging.
 #### Frequent Visitors Goals
-
+-  I want a site that is constantly being improved and offers new features.
  
 ## Design
 ### Colour Scheme
