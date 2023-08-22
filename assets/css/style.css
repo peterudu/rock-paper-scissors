@@ -60,6 +60,10 @@ footer {
     height: 1.25rem;
 }
 
+#make-choice {
+    padding: 5px;
+    font-size: 1.5rem;
+}
 .player {
     background-color: lightblue;
     float: left;
@@ -99,10 +103,16 @@ footer {
      
 }
 
-/* For small screen sizes from 50px wide and below */
+/* For small screen sizes from 350px wide and below */
 @media screen and (max-width: 350px) {
     header {
         font-size: 12px;
         box-shadow: none;
+        margin-bottom: 10px;
+    }
+
+    #make-choice {
+        padding: 5px;
+        font-size: 1.2rem;
     }
 } 
