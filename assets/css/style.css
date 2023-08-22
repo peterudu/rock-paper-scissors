@@ -22,10 +22,9 @@ body {
 header {
     background-color: #ffffff;
     padding: 1rem;
-    /* position: fixed; */
     z-index: 99;
     text-align: center;
-    /* height: 5rem; */
+    height: 5rem; 
     width: 100%;
     box-shadow: 0 2px 2px #000000;
 }
@@ -80,3 +79,28 @@ footer {
 #computer-image {
     width: 75%;
 }
+
+/* MEDIA QUERIES */
+
+/* For medium screen sizes from 950px wide and below */
+@media screen and (max-width: 950px) {
+
+
+}
+
+/* For small screen sizes from 800px wide and below */
+@media screen and (max-width: 800px) {
+
+} 
+
+/* For small screen sizes from 600px wide and below */
+@media screen and (max-width: 600px) {
+   
+     
+}
+
+/* For small screen sizes from 450px wide and below */
+@media screen and (max-width: 350px) {
+    
+   
+} 
