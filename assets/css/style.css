@@ -54,6 +54,8 @@ footer {
     margin: 2px;
     width: 5rem;
     height: 2.5rem;
+    cursor: pointer;
+    margin: 4px 2px;
 }
 
 #messages {
