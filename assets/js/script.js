@@ -19,7 +19,7 @@ let remainingRounds = document.querySelector(".remainingRounds");
 console.log(remainingRounds.innerHTML)
 console.log(rounds)
 
-// Add even listener to all buttons
+// Add event listener to all buttons
 for (let button of buttons) {
   button.addEventListener("click", function () {
     let playerChoice = this.getAttribute("data-choice");
@@ -27,8 +27,8 @@ for (let button of buttons) {
   });
 }
 
-
-
+// Add event listener to reset button
+resetBtn.addEventListener("click", reset);
 
 /**
  * The main game function. Accepts one parameter, which

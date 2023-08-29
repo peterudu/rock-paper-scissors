@@ -100,6 +100,23 @@ footer {
     width: 75%;
 }
 
+.resetBtn {
+    /* display: none; */
+    background: #f4f4f4;
+    color: #333333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin: 1rem;
+}
+
+.resetBtn:hover {
+    cursor: pointer;
+    background: #99ff66;
+    color: #ffffff;
+}
+
 /* MEDIA QUERIES */
 
 /* For medium screen sizes from 950px wide and below */
