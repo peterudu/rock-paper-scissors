@@ -63,6 +63,14 @@ footer {
     font-weight: bold;
 }
 
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 5px;
+}
+
 #messages {
     height: 1.25rem;
 }
@@ -71,6 +79,7 @@ footer {
     padding: 5px;
     font-size: 1.5rem;
 }
+
 .player {
     background-color: lightblue;
     float: left;
