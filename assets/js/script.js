@@ -19,7 +19,9 @@ let remainingRounds = document.querySelector(".remainingRounds");
 console.log(remainingRounds.innerHTML)
 console.log(rounds)
 
-// Add event listener to all buttons
+/**
+ * Add event listener to all control buttons
+ */
 for (let button of buttons) {
   button.addEventListener("click", function () {
     let playerChoice = this.getAttribute("data-choice");
@@ -44,13 +46,15 @@ function playGame(playerChoice) {
   computerImage.src = `assets/images/${choices[computerChoice]}.png`;
   computerImage.alt = choices[computerChoice];
 
-  checkWinner(choices[computerChoice], choices[playerChoice]);
+  let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+
+  showResult(result, computerChoice)
  
 }
 
 /**
- * Checks to see who the winner is, it accepts two strings as
- * parameters
+ * Checks to see who the winner of the round is, it accepts two strings as parameters
+ * Returns the winner of the round or a draw
  */
 function checkWinner(pl, co) {
   if (pl === co) {
@@ -86,3 +90,23 @@ function checkWinner(pl, co) {
   }
 }
 
+/**
+ * Takes in the result of the winner of a round and then increments the scoreboard score for either the player or the computer
+ * If the result is a draw then there is no winner and no increment to score
+ */
+function showResult(result) {
+  if (result === "Player") {
+    scoreboard.player++;
+  } else if (result === "Computer") {
+    scoreboard.computer++;
+  } else if (result === "Draw") {
+    scoreboard.player;
+    scoreboard.computer;
+  }
+
+  // Display updated player and computer score
+  score.innerHTML = `
+  <p>Player Score: ${scoreboard.player}</p>
+  <p>Computer Score: ${scoreboard.computer}</p>
+  `;
+}
