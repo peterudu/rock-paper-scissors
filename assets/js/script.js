@@ -2,13 +2,6 @@
  * Declare constants and variables for DOM elements
  * and possible choices
  */
-let playerScore = 0;
-let computerScore = 0;
-
-
-const playerScoreSpan = document.querySelector("#player-score");
-const computerScoreSpan = document.querySelector("#computer-score");
-
 const buttons = document.querySelectorAll(".control");
 const playerImage = document.querySelector("#player-image");
 const computerImage = document.querySelector("#computer-image");
