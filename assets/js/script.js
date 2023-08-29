@@ -86,33 +86,3 @@ function checkWinner(pl, co) {
   }
 }
 
-
-/**
- * Assigns a draw message if no game winnner between player and computer
- */
-function draw(playerChoice, computerChoice) {
-  playerScoreSpan.innerHTML = playerScore;
-  computerScoreSpan.innerHTML = computerScore;
-  messages.innerHTML = "A draw";
-}
-
-/**
- * Assigns a message that player won the game and increments total player score value by 1
- */
-function won(playerChoice, computerChoice) {
-  playerScore++;
-  playerScoreSpan.innerHTML = playerScore;
-  computerScoreSpan.innerHTML = computerScore;
-  messages.innerHTML = "Player won";
-}
-
-/**
- * Assigns a message that computer won the game and increments the total computer score value by 1
- */ 
-function lost(playerChoice, computerChoice) {
-  computerScore++;
-  computerScoreSpan.innerHTML = computerScore;
-  playerScoreSpan.innerHTML = playerScore;
-  messages.innerHTML = "Computer won";
-}
-
