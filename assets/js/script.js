@@ -16,8 +16,7 @@ let scoreboard = {
 };
 let rounds =  0;
 let remainingRounds = document.querySelector(".remainingRounds");
-console.log(remainingRounds.innerHTML)
-console.log(rounds)
+
 
 /**
  * Add event listener to all control buttons
@@ -41,7 +40,6 @@ function playGame(playerChoice) {
   playerImage.alt = choices[playerChoice];
 
   let computerChoice = Math.floor(Math.random() * 3);
-  console.log(playerChoice, computerChoice);
 
   computerImage.src = `assets/images/${choices[computerChoice]}.png`;
   computerImage.alt = choices[computerChoice];
@@ -92,7 +90,7 @@ function checkWinner(pl, co) {
 
 /**
  * Takes in the result of the winner of a round and then increments the scoreboard score for either the player or the computer
- * If the result is a draw then there is no winner and no increment to score
+ * If the result is a draw then there is no winner and no increment to scores
  */
 function showResult(result) {
   if (result === "Player") {
@@ -110,3 +108,4 @@ function showResult(result) {
   <p>Computer Score: ${scoreboard.computer}</p>
   `;
 }
+

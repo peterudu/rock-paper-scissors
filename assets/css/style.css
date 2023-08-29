@@ -101,7 +101,7 @@ footer {
 }
 
 .resetBtn {
-    /* display: none; */
+    display: none;
     background: #f4f4f4;
     color: #333333;
     padding: 0.4rem 1.3rem;
