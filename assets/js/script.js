@@ -52,33 +52,36 @@ function playGame(playerChoice) {
  * Checks to see who the winner is, it accepts two strings as
  * parameters
  */
-function checkWinner(playerChoice, computerChoice) {
-  if (playerChoice === computerChoice) {
-    draw(playerChoice, computerChoice);
-    messages.innerHTML = "A draw";
-  } else if (playerChoice === "rock") {
-    if (computerChoice === "paper") {
-      lost(playerChoice, computerChoice);
-      messages.innerHTML = "Computer won";
+function checkWinner(pl, co) {
+  if (pl === co) {
+    messages.innerHTML = "This round is a draw";   
+    return "Draw";
+  }
+  if (pl === "rock") {
+    if (co === "paper") {
+      messages.innerHTML = "Computer wins the round";
+      return "Computer";
     } else {
-      won(playerChoice, computerChoice);
-      messages.innerHTML = "Player won";
+        messages.innerHTML = "Player wins the round";
+      return "Player";
     }
-  } else if (playerChoice === "paper") {
-    if (computerChoice === "scissors") {
-      lost(playerChoice, computerChoice);
-      messages.innerHTML = "Computer won";
+  }
+  if (pl === "paper") {
+    if (co === "scissors") {
+      messages.innerHTML = "Computer wins the round";
+      return "Computer";
     } else {
-      won(playerChoice, computerChoice);
-      messages.innerHTML = "Player won";
+        messages.innerHTML = "Player wins the round";
+      return "Player";
     }
-  } else if (playerChoice === "scissors") {
-    if (computerChoice === "rock") {
-      lost(playerChoice, computerChoice);
-      messages.innerHTML = "Computer won";
+  }
+  if (pl === "scissors") {
+    if (co === "rock") {
+        messages.innerHTML = "Computer wins the round";
+      return "Computer";
     } else {
-      won(playerChoice, computerChoice);
-      messages.innerHTML = "Player won";
+        messages.innerHTML = "Player wins the round";
+      return "Player";
     }
   }
 }
