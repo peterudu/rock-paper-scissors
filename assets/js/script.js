@@ -1,17 +1,30 @@
 /**
- * Declare constants for DOM elements
+ * Declare constants and variables for DOM elements
  * and possible choices
  */
 let playerScore = 0;
 let computerScore = 0;
+
+
 const playerScoreSpan = document.querySelector("#player-score");
 const computerScoreSpan = document.querySelector("#computer-score");
+
 const buttons = document.querySelectorAll(".control");
 const playerImage = document.querySelector("#player-image");
 const computerImage = document.querySelector("#computer-image");
 const messages = document.querySelector("#messages");
 const choices = ["rock", "paper", "scissors"];
+const resetBtn = document.querySelector("#reset");
 
+let score = document.querySelector("#score");
+let scoreboard = {
+  player: 0,
+  computer: 0,
+};
+let rounds =  0;
+let remainingRounds = document.querySelector(".remainingRounds");
+console.log(remainingRounds.innerHTML)
+console.log(rounds)
 
 // Add even listener to all buttons
 for (let button of buttons) {
@@ -20,6 +33,8 @@ for (let button of buttons) {
     playGame(playerChoice);
   });
 }
+
+
 
 
 /**
