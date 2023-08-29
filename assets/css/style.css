@@ -33,7 +33,7 @@ header {
 footer {
     background-color: #ffffff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.1rem;
 }
 
 /* section / main game area */
@@ -120,6 +120,10 @@ footer {
         width: 60%;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    .score {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
