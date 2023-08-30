@@ -47,7 +47,7 @@ function playGame(playerChoice) {
   let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
   showResult(result, computerChoice)
- 
+  gameWinner()
 }
 
 /**
@@ -92,7 +92,7 @@ function checkWinner(pl, co) {
  * Takes in the result of the winner of a round and then increments the scoreboard score for either the player or the computer
  * If the result is a draw then there is no winner and no increment to scores
  */
-function showResult(result) {
+function showResult(result, computerChoice) {
   if (result === "Player") {
     scoreboard.player++;
   } else if (result === "Computer") {
@@ -109,3 +109,27 @@ function showResult(result) {
   `;
 }
 
+/**
+ * Displays the first to win 3 rounds as the winner of the game
+ * Ends the game an makes control buttons inactive
+ */
+function gameWinner(rounds) {
+  if (scoreboard.player == 3) {
+    console.log("Game Over - Player has won!!")
+    remainingRounds.innerHTML = `Remaining Rounds: ${10 - rounds}`;
+    remainingRounds.innerHTML = `Game Over - Player has won!!`;
+    document.getElementById("rock-btn").disabled=true;
+    document.getElementById("paper-btn").disabled=true;
+    document.getElementById("scissors-btn").disabled=true;
+    // document.getElementById("restart").style.opacity=1;
+  }
+  if (scoreboard.computer == 3) {
+    console.log("Game Over - Computer has won!!")
+    remainingRounds.innerHTML = `Remaining Rounds: ${10 - rounds}`;
+    remainingRounds.innerHTML = `Game Over - Computer has won!!`;
+    document.getElementById("rock-btn").disabled = true;
+    document.getElementById("paper-btn").disabled = true;
+    document.getElementById("scissors-btn").disabled = true;
+    // document.getElementById("reset").style.opacity = 1;
+  }
+}
