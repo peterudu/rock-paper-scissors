@@ -34,25 +34,28 @@ Wireframes of the game page was created as blueprint for desktop and mobile devi
 
 - [Wireframe of game page on desktop device](/assets/images/balsamiq-wireframe-desktop.webp)
 ### Features
-The Rock Paper Scissors website has a single page with attractive features.
+The Rock Paper Scissors website has a single page with several attractive features.
 - Header
-    - The header contains the heading title of the site. It has a large text font and so immediately catches the attention of the site visitor.
+    - The header contains the heading title of the site. It has a descriptive large text font which is immediately drawn to the attention of the site visitor.
     
     ![Header](/assets/images/header.webp)
 
 - Footer
-    - The footer section lies at the bottom of the game page and it contains the rules of the game. T open to a new tab and so allowing the user to navigate easily.
-    - The footer rules content enables new visitors and beginners to quickly grasp how the game is played
+    - The footer section lies at the bottom of the game page and it contains the rules of the game. 
+    - The footer rules content enables new visitors and beginners to quickly grasp how the game is played.
 
-    ![Footer](/assets/images/footer.webp)
+    ![Footer](/assets/images/)
 
 - Game Area
-    The game area is main area of the game page. It contains the game option buttons, displays the results message as well as showing the player and computer choices.
-    - The buttons enable the player to choose from one of three game buttons options inorder to start the game.
-    - The game scores display information enables the user to keep a overview of the game process
-    - The message point displays the winner of a game.
-
-    ![Game Area](/assets/images/game-area.webp)
+    The game area is the main action area of the game page. It contains the game control buttons, message display, remaining-rounds display, scoreboard, the player-computer choice boxes and the reset button.
+    ![Game Area](/assets/images)
+    - The game [control buttons](/assets/images) enable the player to choose from one of three game buttons options inorder to start the game. The selected control button represents the player's choice of his game's strategy move. They are important because they also trigger other features of the game to be activated, for example the reset button
+    - The [message display](/assets/images/) feature informs the site user about the winner of the last round of game that was just completed.
+    - The [remaining rounds](/assets/images/) container output informs the site user about who the overall winner of the game is. With a remaining rounds countdown some excitement is built into the game.
+    - The [scoreboard] displays the player and computer game scores. It provides an overview of how the game winner has emerged. When the scoreboard shows that either player or computer has achieved a score of 3 the game ends.
+    - The [player - computer choice boxes](/assets/images/) are used as a graphic tool to visualize the game stragegy choices made by both the player and the computer. This feature enables the user to quickly and easily identify his choice and compare that with choice made by the computer.
+    - The [reset button](/assets/) is an important feature which offers the user the chance to clear the and abruptly stop the current game. Also when a game has ended it serves as start button for a new game to be initiated.
+    
     
 
 ### Accessibility
