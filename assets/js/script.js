@@ -36,6 +36,11 @@ resetBtn.addEventListener("click", reset);
  * is the  data choice value of the selected button
  */
 function playGame(playerChoice) {
+  rounds++
+  remainingRounds.innerHTML = `Remaining Rounds: ${10 - rounds}`;
+
+  resetBtn.style.display = "inline-block";
+  
   playerImage.src = `assets/images/${choices[playerChoice]}.png`;
   playerImage.alt = choices[playerChoice];
 
@@ -121,7 +126,6 @@ function gameWinner(rounds) {
     document.getElementById("rock-btn").disabled=true;
     document.getElementById("paper-btn").disabled=true;
     document.getElementById("scissors-btn").disabled=true;
-    // document.getElementById("restart").style.opacity=1;
   }
   if (scoreboard.computer == 3) {
     console.log("Game Over - Computer has won!!")
@@ -130,6 +134,5 @@ function gameWinner(rounds) {
     document.getElementById("rock-btn").disabled = true;
     document.getElementById("paper-btn").disabled = true;
     document.getElementById("scissors-btn").disabled = true;
-    // document.getElementById("reset").style.opacity = 1;
   }
 }
