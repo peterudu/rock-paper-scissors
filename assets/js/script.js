@@ -40,7 +40,7 @@ function playGame(playerChoice) {
   remainingRounds.innerHTML = `Remaining Rounds: ${10 - rounds}`;
 
   resetBtn.style.display = "inline-block";
-  
+
   playerImage.src = `assets/images/${choices[playerChoice]}.png`;
   playerImage.alt = choices[playerChoice];
 
@@ -135,4 +135,18 @@ function gameWinner(rounds) {
     document.getElementById("paper-btn").disabled = true;
     document.getElementById("scissors-btn").disabled = true;
   }
+}
+
+/**
+ * Clears the scoreboard and resets the player and the computer scores back to 0
+ * Sets the conditions for start of a new game
+ */
+function reset() {
+  if (scoreboard.player == 3)
+  document.getElementById("rock-btn").disabled = false;
+  document.getElementById("paper-btn").disabled = false;
+  document.getElementById("scissors-btn").disabled = false;
+  rounds = 0;
+
+  window.location.reload();
 }
