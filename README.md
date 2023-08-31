@@ -143,6 +143,17 @@ Full testing was performed on:
 - Mobile Device:
     - LG Velvet 
 
+I used my laptop and mobile device to conduct the following test on the main game area:
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| ---| ---| ---| ---| ---|
+| GAME AREA |  |  |  |  |  
+|  Control Buttons  | If one of the control buttons is clicked the user should be linked to the game page which should show the correct image of the game option that he has selected in the player choice box, the message display should show who won the round, remaining rounds should be displayed and the reset button show become active and visable. | Clicked a control button  |The game page shows a new game round with image of the selected game option, a new message displays the winner of the round, the remaining rounds is displayed and reset button is displayed | pass |
+| Message Display | If a control button is clicked the message display should show who won the round. | Clicked a control button | Message display shows who won the last round. | pass |
+| Remaining Rounds Display | If a control button is clicked the remaining rounds display should show the remaining game rounds. After three successful rounds the remaining rounds should show the overall game winner | Clicked a control button | Remaining rounds display showed the game rounds remaining. After several clicks and 3 successful won rounds the overall game winner was displayed | pass |
+| Scoreboard | If a control button is clicked the scoreboard updates the scores for either player or for computer or else no score increment in case of a drawn round. | Clicked a control button | The player score or computer score increased depending on who won the round. If no winner emerged then the scores for either player or computer are not updated. | pass |
+| Player and Computer Choice Boxes | If the user selects a specific game control button option then the player choice box should display the exact image of the selected game option. The computer choice box should display a randomly generated image of one the three game options | Clicked a control button | The player choice box showed the exact image of the game option I selected and a randomly generated image of one of the game options was displayed on the computer choice box | pass |
+| Reset Button | If the user clicks the reset button all the already created player and computer scores and data will be cleared from the screen. The user will be redirected and the starting game page will be displayed. All scoreboard scores for player and computer will be set to 0. Remaining rounds will be set back to 10 | Clicked a control button | The already existing scoreboard scores and remaining rounds were cleared and the user is directed to the starting game round phase | pass |    
+
 #### General Testing
 The single game page was tested on Chrome, Firefox and Edge browsers and they were all successful.    
 ### Unfixed Bugs
