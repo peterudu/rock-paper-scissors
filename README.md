@@ -129,13 +129,13 @@ Firsttime Visitors
 Returning Visitors
 | Goals | How are they achieved? |
 | ---| ---|
-| I want a game site which is satisfying to use. | The game site xxxx |
-| I want a game website that is challenging. | xxxxx |
+| I want a game site which is satisfying to use. | The colourful game and the ability of the player to set his own individual goals creates satisfaction for the site user. Also apart from winning the endgame the possibility of a player engaging and winning round duels against the computer creates extra satisfaction to the user of the site. |
+| I want a game website that is challenging. | The game is may be simple to play but the inbuilt random generated choice of the computer challenges the player for him to win at least 50 percent of the games  |
 
 Frequent Visitors
 | Goals | How are they achieved? |
 | ---| ---|
-| I want a site that is constantly being improved and offers new features. | xxxx |
+| I want a site that is constantly being improved and offers new features. | The game allows for extra new features to be added in future. Such features could include setting a maximum round time for a player to select a control button to make it more challenging, make it possible to have multiple players or by also adding more game choice button options to the already existing rock, paper, scissors buttons. |
 #### Full Testing
 Full testing was performed on:
 - Laptop:
