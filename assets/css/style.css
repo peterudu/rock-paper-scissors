@@ -75,7 +75,7 @@ footer {
     font-size: 1.3rem;
 }
 
-/* messages display  */
+/* remaining rounds display  */
 .remainingRounds {
     height: 1.5rem;
     font-size: 1.3rem;
@@ -147,19 +147,6 @@ footer {
         }
 } 
 
-/* For small screen sizes from 600px wide and below */
-/* @media screen and (max-width: 600px) {
-    .player, .computer {
-        float: none;
-        width: 60%;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .score {
-        grid-template-columns: repeat(1, 1fr);
-    }
-} */
 
 /* For small screen sizes from 350px wide and below */
 @media screen and (max-width: 350px) {
@@ -177,6 +164,22 @@ footer {
     .control {
         width: 4rem;
         height: 2rem;
+    }
+
+    #messages {
+        font-size: 1rem;
+    }
+
+    .remainingRounds {
+        font-size: 1rem;
+    }
+
+    .score {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 13px;
     }
 
 } 
