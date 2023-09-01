@@ -63,6 +63,25 @@ footer {
     font-weight: bold;
 }
 
+#make-choice {
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* messages display  */
+#messages {
+    height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* messages display  */
+.remainingRounds {
+    height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* scoreboard display */
 .score {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,15 +90,8 @@ footer {
     padding: 5px;
 }
 
-#messages {
-    height: 1.25rem;
-}
 
-#make-choice {
-    padding: 5px;
-    font-size: 1.5rem;
-}
-
+/* player & computer containers */
 .player {
     background-color: lightblue;
     float: left;
@@ -121,19 +133,22 @@ footer {
 
 /* MEDIA QUERIES */
 
-/* For medium screen sizes from 950px wide and below */
-@media screen and (max-width: 950px) {
-
-
-}
-
-/* For small screen sizes from 800px wide and below */
-@media screen and (max-width: 800px) {
-
+/* For small screen sizes from 850px wide and below */
+@media screen and (max-width: 850px) {
+        .player, .computer {
+            float: none;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    
+        .score {
+            grid-template-columns: repeat(1, 1fr);
+        }
 } 
 
 /* For small screen sizes from 600px wide and below */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .player, .computer {
         float: none;
         width: 60%;
@@ -144,7 +159,7 @@ footer {
     .score {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */
 
 /* For small screen sizes from 350px wide and below */
 @media screen and (max-width: 350px) {
