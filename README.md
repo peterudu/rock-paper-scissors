@@ -163,6 +163,7 @@ The single game page was tested on Chrome, Firefox and Edge browsers and they we
 ### Code Used
 - Code used to build the structure of the game area of the page was based on [Code Institute](https://codeinstitute.net/de/) Full Stack Development Software course
 - Code used to build the game page was also inspired from Brad Traversy (Traversy Media) course in [YouTube](https://www.youtube.com/) 
+- Code used to build the reset button feature was inspired from Professor Richard Homa tutorial course in [YouTube](https://www.youtube.com/) 
 ### Content
 - The structure and layout used to create the README file was modelled on example by [Kera Cudmore](https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md) 
 
