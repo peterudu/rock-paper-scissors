@@ -157,7 +157,7 @@ I used my laptop and mobile device to conduct the following test on the main gam
 #### General Testing
 The single game page was tested on Chrome, Firefox and Edge browsers and they were all successful.    
 ### Unfixed Bugs
- - I could not fix the bug for the game restart button
+ - I could not fix the bug on how to reset remaining rounds
 
 ## Credits
 ### Code Used
