@@ -115,9 +115,9 @@ I used the Lighthouse feature from Chrome Developer Tools to test the levels of 
 I used the [JSHint validator](https://jshint.com/) to test the JavaScript. No error was reported:
 Metrics reported were as follows:
  - There are 6 functions in this file.
- - Function with the largest signature take 2 arguments, while the median is 2.
- - Largest function has 18 statements in it, while the median is 4.
- - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+ - Function with the largest signature take 2 arguments, while the median is 1.
+ - Largest function has 21 statements in it, while the median is 8.5.
+ - The most complex function has a cyclomatic complexity value of 8 while the median is 2.5.
 ### Manual Testing
 #### Testing User Stories
 Firsttime Visitors
