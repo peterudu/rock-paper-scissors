@@ -4,7 +4,7 @@ The Rock Paper Scissors website is a simple game application which visitors can 
 
 The graphics of the game are basic and this makes it appealing to all age groups and enables the user of the application to easily focus on enjoying the game.
 
-![Image of the website](/assets/images/amiresponsivep.webp)
+![Image of the website](/assets/images/amiresponsive.webp)
 
 [The live link to the hosted project](https://peterudu.github.io/rock-paper-scissors/ 
 ) 
@@ -44,17 +44,17 @@ The Rock Paper Scissors website has a single page with several attractive featur
     - The footer section lies at the bottom of the game page and it contains the rules of the game. 
     - The footer rules content enables new visitors and beginners to quickly grasp how the game is played.
 
-    ![Footer](/assets/images/)
+    ![Footer](/assets/images/footer.webp)
 
 - Game Area
     The game area is the main action area of the game page. It contains the game control buttons, message display, remaining-rounds display, scoreboard, the player-computer choice boxes and the reset button.
-    ![Game Area](/assets/images)
-    - The game [control buttons](/assets/images) enable the player to choose from one of three game buttons options inorder to start the game. The selected control button represents the player's choice of his game's strategy move. They are important because they also trigger other features of the game to be activated, for example the reset button
-    - The [message display](/assets/images/) feature informs the site user about the winner of the last round of game that was just completed.
-    - The [remaining rounds](/assets/images/) container output informs the site user about who the overall winner of the game is. With a remaining rounds countdown some excitement is built into the game.
-    - The [scoreboard] displays the player and computer game scores. It provides an overview of how the game winner has emerged. When the scoreboard shows that either player or computer has achieved a score of 3 the game ends.
-    - The [player - computer choice boxes](/assets/images/) are used as a graphic tool to visualize the game stragegy choices made by both the player and the computer. This feature enables the user to quickly and easily identify his choice and compare that with choice made by the computer.
-    - The [reset button](/assets/) is an important feature which offers the user the chance to clear the and abruptly stop the current game. Also when a game has ended it serves as start button for a new game to be initiated.
+    ![Game Area](/assets/images/game-area.webp)
+    - The game [control buttons](/assets/images/control-buttons.webp) enable the player to choose from one of three game buttons options inorder to start the game. The selected control button represents the player's choice of his game's strategy move. They are important because they also trigger other features of the game to be activated, for example the reset button
+    - The [message display](/assets/images/message-display.webp) feature informs the site user about the winner of the last round of game that was just completed.
+    - The [remaining rounds](/assets/images/remaining-rounds.webp) container output informs the site user about who the overall winner of the game is. With a remaining rounds countdown some excitement is built into the game.
+    - The [scoreboard](/assets/images/scoreboard-scores.webp) displays the player and computer game scores. It provides an overview of how the game winner has emerged. When the scoreboard shows that either player or computer has achieved a score of 3 the game ends with the [gameover-phase](/assets/images/gameover-phase.webp) in which the control buttons become inactive and the overall winner of the game is displayed.
+    - The [player - computer choice boxes](/assets/images/choice-boxes.webp) are used as a graphic tool to visualize the game stragegy choices made by both the player and the computer. This feature enables the user to quickly and easily identify his choice and compare that with choice made by the computer.
+    - The [reset button](/assets/images/reset-button.webp) is an important feature which offers the user the chance to clear the and abruptly stops the current game. Also when a game is reset the user is redirected to the [starting page](/assets/images/starting-page.png) of the game site and a new game can be initiated again.
     
     
 
