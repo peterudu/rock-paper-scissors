@@ -112,6 +112,7 @@ footer {
     width: 75%;
 }
 
+/* reset button */
 .resetBtn {
     display: none;
     background: #f4f4f4;
@@ -130,6 +131,7 @@ footer {
     background: #99ff66;
     color: #ffffff;
 }
+
 
 /* MEDIA QUERIES */
 
